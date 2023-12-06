@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    padding: 50px 50px 0;
+}
+
+section {
+    padding: 15px 50px;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid #FFC83D;
+    background-color: #1C1C1C;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+    width: 140px;
+    font-family: 'Raleway', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+.custom-button.active,
+.custom-button:hover {
+    background-color: #FFC83D !important;
+    color: #1C1C1C !important;
+}
+
+footer {
+    padding: 20px;
+}
+
+.hidden-area {
+    display: none;
+    padding: 20px;
+    background-color: #333333;
+    color: #FFFFFF;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.custom-button:hover,
+.custom-button.active:hover {
+    background-color: #FFC83D;
+    color: #1C1C1C;
+}
+
+.profile-image {
+    max-width: 225px;
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    padding: 0 20px 20px 20px;
+}
+
+.greeting {
+    margin-top: 20px;
+    font-size: 14px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.greeting p {
+    font-size: 18px;
+}
+
+.greeting p span {
+    font-weight: bold;
+    color: #FFC83D;
+}
+
+.linkedin-icon {
+    font-size: 32px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.linkedin-icon:hover {
+    color: #FFC83D;
+}
+
+@media only screen and (min-width: 600px) {
+    .linkedin-icon {
+        position: absolute;
+        top: 20px;
+        right: 25%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .linkedin-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .custom-button {
+        margin-bottom: 10px;
+    }
+
+    header, section, footer {
+        padding: 20px;
+    }
+}

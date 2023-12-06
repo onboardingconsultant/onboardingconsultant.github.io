@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Onboarding Consultant</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="https://www.linkedin.com/in/raulpoplearning/" target="_blank" class="linkedin-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <img src="profile-image.png" alt="Your Onboarding Consultant" class="profile-image">
+        <div class="greeting">
+            <h1>Hi, I'm Raul 👋</h1>
+            <p>A learning consultant focusing on end-to-end <span>onboarding solutions</span>.</p>
+            <p>I'm researching and refining project plans for implementing<br>successful onboarding programs tailored for:</p>
+        </div>
+    </header>
+
+    <section>
+        <button type="button" id="newHires" class="custom-button" onclick="changeText('newHires')">New Hires</button>
+        <button type="button" id="partners" class="custom-button" onclick="changeText('partners')">Partners</button>
+        <button type="button" id="customers" class="custom-button" onclick="changeText('customers')">Customers</button>
+        <button type="button" id="users" class="custom-button" onclick="changeText('users')">Users</button>
+
+        <div id="newHiresText" class="hidden-area">
+            <p>New Hire Onboarding</p>
+        </div>
+        <div id="partnersText" class="hidden-area">
+            <p>Partner Onboarding</p>
+        </div>
+        <div id="customersText" class="hidden-area">
+            <p>Customer Onboarding</p>
+        </div>
+        <div id="usersText" class="hidden-area">
+            <p>User Onboarding</p>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
