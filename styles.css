@@ -17,6 +17,7 @@ header {
 }
 
 section {
+    position: relative; /* Make section a positioning context for absolute positioning */
     padding: 15px 50px;
 }
 
@@ -41,17 +42,24 @@ section {
     color: #1C1C1C !important;
 }
 
-footer {
+.footer {
     padding: 20px;
 }
 
 .hidden-area {
+    position: absolute;
+    top: 100%; /* Position it below the button */
+    font-family: 'Raleway', sans-serif;
     display: none;
     padding: 20px;
-    background-color: #333333;
+    background-color: #1C1C1C;
     color: #FFFFFF;
-    margin-top: 20px;
-    border-radius: 10px;
+    font-size: 18px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
 .custom-button:hover,
